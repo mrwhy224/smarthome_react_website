@@ -1,0 +1,242 @@
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+  font-size: 1.1rem;
+}
+
+.social-icon a{
+  margin: 0px 10px;
+}
+.footer{
+  margin-top: 20px;
+  border-radius: 50px 50px 0px 0px;
+  padding: 20px 0px;
+  color: var(--bs-navbar-color);
+}
+
+.footer.light{
+  --bs-navbar-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(var(--bs-light-rgb),1)!important;
+}
+.footer.dark{
+  --bs-navbar-color: rgba(255, 255, 255, 0.55);
+  background-color: rgba(var(--bs-dark-rgb),1)!important;
+}
+.social-icon{
+  margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+  opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+  opacity: 0;
+  }
+}
+
+.animate__fadeIn{
+  animation: fadeIn 2s;
+  opacity: 1;
+}
+.animate{
+/*  opacity: 1;*/
+/*  display: block;*/
+}
+.banner{
+  min-height: 400px;
+  overflow: hidden!important;
+/*  padding-top: 100px;*/
+}
+.video-parent{
+  background-color: rgba(112,122,137,1);
+  position: absolute;
+  top: 0;
+  margin: auto;
+  width: 100%;
+  height: 1000px;
+  border-radius: 0px 0px 50px 50px;
+/*  background: #000;*/
+
+-webkit-box-shadow: 0 10px 50px -6px rgb(33,37,41);
+   -moz-box-shadow: 0 10px 50px -6px rgb(33,37,41);
+        box-shadow: 0 10px 50px -6px rgb(33,37,41);
+
+  overflow: hidden;
+  clip-path: 0 0;
+  transform: translatez(0);
+}
+.homeVideo{
+  transform: translatez(0);
+  position: absolute;
+  top: -100%;
+  bottom: -100%;
+  left: -100%;
+  right: -100%;    
+
+  margin: auto;
+
+  min-width: 100%;
+  min-height: 1000px;
+  clear:both;
+}
+.main-text-box{
+  margin-top: 150px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.page-content{
+  width: 100%;
+  box-sizing: border-box!important; 
+  overflow-x: hidden;
+}
+.main-text-box img{
+  max-width: 500px;
+  display: block;
+}
+.sec{
+  z-index: 1;
+  width: 100%;
+/*  padding: 50px 0;*/
+  min-height: 500px;
+
+}
+.sec-top{
+  z-index: 5;
+  background-color: #0289b8;
+/*  border-radius: 50px;*/
+  -webkit-box-shadow: 0 2px 20px 1px rgba(33,37,41,0.5);
+   -moz-box-shadow: 0 2px 20px 1px rgba(33,37,41,0.5);
+        box-shadow: 0 2px 20px 1px rgba(33,37,41,0.5);
+}
+
+
+.page-content section:nth-of-type(2){
+/*  margin-top:396px;*/
+  min-height: 1000px;
+}
+.footer{
+  -webkit-box-shadow: 0 2px 20px 1px rgba(33,37,41,0.5);
+   -moz-box-shadow: 0 2px 20px 1px rgba(33,37,41,0.5);
+        box-shadow: 0 2px 20px 1px rgba(33,37,41,0.5);
+}
+
+.footer-parent{
+  margin-top: -70px;
+}
+.dark .sec-down{
+  background-color: rgba(20,20,20,0.8);
+  color: #ccc;
+}
+.light .sec-down{
+  background-color: rgba(220,220,220,0.8);
+}
+.light .title-box {
+  color: #a38642;
+}
+.dark .title-box {
+  color: #c2ab5f;
+}
+.about-text{
+  white-space: nowrap; 
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+}
+.about-text h1{
+  font-size: 700%;
+}
+
+.about-text h2{
+
+  font-size: 500%;
+}
+.about-text div{
+  display: flex;
+  flex-direction:column;
+  
+}
+.about-text h3{
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  font-size: 150%;
+}
+@media (max-width: 1200px) {
+  .main-text-box {
+    font-size: 80%;
+  }
+  .about-text{
+    font-size: 70%;
+  }
+}
+
+.light .sec-top {
+  color: #eee;
+}
+.dark .sec-top {
+/*  color: #ff;*/
+}
+
+
+.contact-btn{
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 15px 25px;
+  border-style: solid;
+  background-color: transparent;
+/*  border-radius: 3px;*/
+  color: #b29842;
+  border-color: #c2ab5f;
+}
+
+.dark .contact-btn:hover{
+  background-color: #c2ab5f;
+  color: #444;
+}
+.light .contact-btn:hover{
+  background-color: #c2ab5f;
+  color: #ddd;
+}
+
+.product-example{
+/*  height: 1200px;*/
+}
+.product-example .model-image{
+  width: 70%;
+  height: auto;
+  position: absolute;
+  left: 0;
+}
+.product-example .model-image img{
+  width: 100%;
+}
+.product-example .model-info{
+/*  width: 50%;*/
+
+/*  height: 50px;*/
+  padding: 100px 30px 100px 0px!important;
+}
+.sec img{
+  max-width: 100%;
+}
+.auwidth{
+  width: 70%;
+}
+@media (max-width: 768px) {
+  .auwidth{
+    width: 95%;
+  }
+  .about-text h2{
+    font-size: 400%;
+  } 
+}
